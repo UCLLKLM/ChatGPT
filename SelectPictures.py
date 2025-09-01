@@ -12,7 +12,7 @@ def select_pictures(directory='.', extensions=None):
     return sorted(pictures)
 
 if __name__ == "__main__":
-    folder = input("Enter the directory path (tryk Enter for current dir): ").strip() or '.'
+    folder = "."#input("Enter the directory path (tryk Enter for current dir): ").strip() or '.'
     pics = select_pictures(folder)
     if not pics:
         print("Ingen JPG-filer fundet.")
